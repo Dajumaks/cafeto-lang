@@ -1,0 +1,4 @@
+# Este archivo contiene errores léxicos
+sembrar a brota 10 @
+sembrar b brota 5 $ 2
+servir("cadena sin cerrar)

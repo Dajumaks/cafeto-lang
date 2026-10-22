@@ -1,0 +1,3 @@
+sembrar x brota 20
+catar x amargo 5:
+    servir("mayor")

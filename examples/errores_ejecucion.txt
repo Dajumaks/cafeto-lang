@@ -1,0 +1,5 @@
+sembrar a brota 10
+sembrar b brota 0
+servir("antes")
+servir(a / b)
+servir("nunca se imprime")

@@ -1,0 +1,25 @@
+# Clases, objetos, atributos, métodos e herencia
+finca Cafe:
+    semilla(origen, precio):
+        cafetal.origen brota origen
+        cafetal.precio brota precio
+    empacar
+    receta describir():
+        entregar "Cafe de " + cafetal.origen + " a $" + cafetal.precio
+    empacar
+empacar
+
+finca Especial injerto Cafe:
+    semilla(origen, precio, puntaje):
+        raiz(origen, precio)
+        cafetal.puntaje brota puntaje
+    empacar
+    receta describir():
+        entregar raiz.describir() + " (puntaje " + cafetal.puntaje + ")"
+    empacar
+empacar
+
+sembrar a brota plantar Cafe("Huila", 12000)
+sembrar b brota plantar Especial("Caldas", 18000, 88)
+servir(a.describir())
+servir(b.describir())

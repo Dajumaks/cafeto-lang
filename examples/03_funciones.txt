@@ -1,0 +1,19 @@
+# Funciones, recursión y llamadas dentro de expresiones
+receta factorial(n):
+    catar n ligero 1:
+        entregar 1
+    empacar
+    entregar n * factorial(n - 1)
+empacar
+
+receta cuadrado(x):
+    entregar x * x
+empacar
+
+receta hipotenusa2(a, b):
+    entregar cuadrado(a) + cuadrado(b)
+empacar
+
+servir("5! = " + factorial(5))
+servir("a2 + b2 = " + hipotenusa2(3, 4))
+servir("Mezcla: " + (factorial(3) + cuadrado(2)) * 2)

@@ -1,0 +1,17 @@
+# colar (while), recolectar (for), decantar (break), filtrar (continue)
+sembrar i brota 1
+colar i ligero 5:
+    catar i mismo 2:
+        i brota i + 1
+        filtrar
+    empacar
+    catar i mismo 5:
+        decantar
+    empacar
+    servir("i =", i)
+    i brota i + 1
+empacar
+
+recolectar k vivero 1 taza 3:
+    servir("k =", k)
+empacar

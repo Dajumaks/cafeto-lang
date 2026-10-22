@@ -1,0 +1,9 @@
+# Arreglos de una dimensión
+sembrar lista brota [10, 20, 30]
+servir("Primero: " + lista[0])
+lista[1] brota 99
+servir("Modificado: " + lista[1])
+servir("Tamano: " + medida(lista))
+servir(lista)
+sembrar nombres brota ["Ana", "Luis"]
+servir(nombres[1] + "!")

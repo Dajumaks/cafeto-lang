@@ -1,0 +1,3 @@
+sembrar nombre brota barista("Tu nombre: ")
+sembrar edad brota barista("Tu edad: ")
+servir("Hola " + nombre + ", el proximo ano tendras " + (edad + 1))

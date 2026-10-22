@@ -1,0 +1,41 @@
+# Errores de ejecución atrapados, volcar propio y lavar
+preparar:
+    sembrar x brota 10 / 0
+derrame e:
+    servir("Capturado: " + e)
+lavar:
+    servir("fin intento 1")
+empacar
+
+preparar:
+    sembrar v brota [1, 2, 3]
+    servir(v[7])
+derrame e:
+    servir("Capturado: " + e)
+empacar
+
+preparar:
+    volcar "error propio"
+derrame e:
+    servir("Capturado: " + e)
+lavar:
+    servir("limpieza")
+empacar
+
+receta riesgo(n):
+    preparar:
+        catar n mismo 0:
+            volcar "n es cero"
+        empacar
+        entregar 100 / n
+    lavar:
+        servir("lavando " + n)
+    empacar
+empacar
+
+servir(riesgo(4))
+preparar:
+    servir(riesgo(0))
+derrame m:
+    servir("riesgo fallo: " + m)
+empacar
