@@ -1,4 +1,6 @@
+
 # Errores de ejecución atrapados, volcar propio y lavar
+
 preparar:
     sembrar x brota 10 / 0
 derrame e:
@@ -34,6 +36,7 @@ receta riesgo(n):
 empacar
 
 servir(riesgo(4))
+
 preparar:
     servir(riesgo(0))
 derrame m:
