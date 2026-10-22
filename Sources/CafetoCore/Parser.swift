@@ -171,7 +171,8 @@ struct Parser {
         case .kwEntregar:
             if functionDepth == 0 { throw Diagnostic(.syntax, line, "'entregar' used outside of a function") }
             advance()
-            let value: Expr? = startsExpression() ? try expression() : nil
+            var value: Expr? = nil
+            if startsExpression() { value = try expression() }
             return .returnStmt(value, line)
 
         case .kwReceta:
