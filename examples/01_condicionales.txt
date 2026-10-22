@@ -1,0 +1,15 @@
+# Condicionales: catar / macchiato / ristretto
+sembrar nota brota 7
+catar nota intenso 9:
+    servir("Excelente")
+macchiato nota intenso 6:
+    servir("Aprobado")
+ristretto:
+    servir("Reprobado")
+empacar
+
+catar nota distinto 7 azucar nota dulce 0:
+    servir("caso A")
+ristretto:
+    servir("caso B")
+empacar
