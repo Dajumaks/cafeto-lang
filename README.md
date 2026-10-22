@@ -1,8 +1,5 @@
 # Cafeto 
 
-![CI](https://github.com/DajumaKs/cafeto-lang/actions/workflows/ci.yml/badge.svg)
-![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange)
-![License](https://img.shields.io/badge/license-MIT-blue)
 
 **Cafeto** es un mini lenguaje de programación con vocabulario cafetero. Su lexer, su parser
 y su intérprete están escritos a mano en Swift, sin generadores de código ni dependencias externas.
