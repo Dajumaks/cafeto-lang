@@ -1,5 +1,7 @@
 import Foundation
 import CafetoCore
+import Dispatch
+
 
 func printUsage() {
     print("""
@@ -25,21 +27,22 @@ func readSource(_ path: String) -> String? {
 }
 
 var showTokens = true
-var path: String? = nil
+var inputPath: String? = nil
 for argument in CommandLine.arguments.dropFirst() {
     switch argument {
     case "-q", "--no-tokens": showTokens = false
     case "-h", "--help":
         printUsage()
         exit(0)
-    default: path = argument
+    default: inputPath = argument
     }
 }
 
-guard let path = path else {
+guard let path = inputPath else {
     printUsage()
     exit(64)
 }
+
 guard let source = readSource(path) else {
     FileHandle.standardError.write(Data("Error: cannot read file '\(path)'\n".utf8))
     exit(66)
