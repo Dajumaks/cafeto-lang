@@ -1,0 +1,10 @@
+servir("¡Hola! ¿Cómo te llamas?")
+sembrar nombre brota barista()
+servir("Mucho gusto, " + nombre)
+servir("¿Cuántos años tienes?")
+sembrar edad brota barista()
+catar edad intenso 17:
+    servir("Eres mayor de edad")
+ristretto:
+    servir("Todavía eres menor de edad")
+empacar
