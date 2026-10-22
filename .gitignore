@@ -6,3 +6,4 @@ xcuserdata/
 .idea/
 .vscode/
 .DS_Store
+build-log.txt
