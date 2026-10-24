@@ -19,3 +19,9 @@ jobs:
         run: swift test
       - name: Run sample program
         run: swift run cafeto --no-tokens examples/01_condicionales.txt
+      - name: Run all examples
+        run: |
+          for f in examples/0*.txt; do
+            echo "===== $f"
+            swift run cafeto --no-tokens "$f" < /dev/null || true
+          done
